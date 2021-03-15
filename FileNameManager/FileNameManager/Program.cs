@@ -10,10 +10,10 @@ namespace FileNameManager
     {
         static void Main(string[] args)
         {
-            var folderpath = @"D:\Listening\薛兆l丰-北大l经济l学课";
-            var filetype = "mp3";
-            var token = "xzf";
-            var additionalToken = "薛兆丰的北大经济学课";
+            var folderpath = @"C:\Users\gyzdm\Documents\Podcasts\New\41 万维钢精英日课第三季";
+            var filetype = "m*";
+            var token = "jy";
+            var additionalToken = new List<string>() { "卓老板聊科技", "ZLB ", "ZLB" };
             var fmanager = new FileManager(folderpath, filetype, token,additionalToken);
             fmanager.StartMassiveRenames();
         }
